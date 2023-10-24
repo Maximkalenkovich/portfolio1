@@ -9,9 +9,9 @@ export const Menu = () =>{
     return(
         <StyledMenu>
             <ul>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" tabIndex={1}>Skills</a></li>
+                <li><a href="#" tabIndex={2}>Projects</a></li>
+                <li><a href="#" tabIndex={3}>Contact</a></li>
             </ul>
         </StyledMenu>
     );
