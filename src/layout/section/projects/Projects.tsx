@@ -6,6 +6,7 @@ import styled from "styled-components"
 import prog2 from "../../../images/prog-2.png"
 import prog3 from "../../../images/prog-3.png"
 import { Container } from "../../../components/Container"
+import { Theme } from "../../../styles/Theme"
 
 
 
@@ -17,7 +18,7 @@ export const Projects = () => {
         <StyledProjects>
         <SectionTitles>Projects</SectionTitles>
         <Container>
-        <FlexWrapper direction="column" align="center">
+        <FlexWrapper direction="column" align="center" wrap="wrap">
 
             <Proj src={prog1} title="Project Name" text="I created this personal project in order to show how to create an interface in Figma using a portfolio as an example." />
             <Proj src={prog2} title="Project Name" text="What was your role, your deliverables, if the project was personal, freelancing."/>
@@ -34,7 +35,8 @@ export const Projects = () => {
 }
 
 const StyledProjects = styled.section`
-src {
-    border: 1px solid red;
-}
+
+background-color: ${Theme.colors.primaryBg};
+
+
 `

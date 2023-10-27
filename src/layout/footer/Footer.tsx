@@ -3,14 +3,14 @@ import { Icon } from "../../components/icon/Icon"
 import { FlexWrapper } from "../../components/FlexWrapper";
 import FooterImg from "../../images/footer.svg"
 import { Theme } from "../../styles/Theme";
-import { Container } from "../../components/Container";
+
 
 
 export const Footer = () =>{
     return(
 
         <StyledFooter>
-            <Container>
+           
             <FlexWrapper direction="column" align="center">
             <SocialList>
                 <SocialItems>
@@ -31,7 +31,6 @@ export const Footer = () =>{
                 </SocialList>
                 <Copyright>© 2023 Maksim Kalenkovich, All Rights Reserved.</Copyright>
                 </FlexWrapper>
-                </Container>
         </StyledFooter>
     )
 }

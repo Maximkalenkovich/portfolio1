@@ -27,7 +27,9 @@ body {
 
 
 section {
-  padding: 100px 0;;
+  padding: 100px 0;
+
+
 }
 
 

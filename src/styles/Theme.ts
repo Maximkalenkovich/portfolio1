@@ -11,5 +11,11 @@ export const Theme = {
 
         textcolor:'#828282',
         borderColor:"#25282B"
+    },
+
+    media:{
+        tablet:"screen and (max-width: 768px)",
+        mobile:"screen and (max-width: 576px)"
     }
+
 }

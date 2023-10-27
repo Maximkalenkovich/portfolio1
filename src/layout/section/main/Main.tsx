@@ -5,28 +5,31 @@ import avatarSvg from "../../../images/yellow-bg.svg"
 import { Container } from "../../../components/Container";
 import { Theme } from "../../../styles/Theme";
 import { StyledButton } from "../../../components/button/styledButton/StyledButton";
-import { Text } from "../../../components/styledText/Text";
+import { font } from "../../../styles/Common";
 
 
 export const Main = ()=>{
     return(
         <StyledMain>
             <Container>
-            <FlexWrapper justify="space-between" align="center">
+            <FlexWrapper justify="space-around"  wrap="wrap">
                  <Greetings>
                     <StyledTitle>Software Developer</StyledTitle>
-                    <Name>Hello, my name</Name>
-                         <Name>is Maxim Kalenkovich</Name>
-                    <Text>Short text with details about you, what you do or your professional career. You can add more information on the about page.</Text>
+                    <Name>Hello, my name is 
+                        Maxim Kalenkovich </Name>
+                    <Text>Short text with details about you, 
+                        what you do or your professional career. 
+                        You can add more information on the about page.</Text>
                     <StyledButton>Projects</StyledButton>
                     <StyledButton>Linkedin</StyledButton>
                 </Greetings>
-                <PhotoBack src = {avatarSvg} alt=""/>
+                <PhotoWrapper>
                <Photo src = {avatar} alt="avatar"/> 
+               </PhotoWrapper>
                
             </FlexWrapper>
             
-            </Container>
+             </Container> 
             
         </StyledMain>
 
@@ -36,53 +39,98 @@ export const Main = ()=>{
 
 const StyledMain = styled.section`
 /* min-height: 100vh; */
+
 display: flex;
 
-${Text}{
-    margin: 32px 0;
+
+${StyledButton}{
+    margin-top: 32px;
+}
+
+
+`
+
+export const Text = styled.p`
+
+${font({fmax: 24, fmin: 15, family: "Nunito, sans-serif", color: "${Theme.colors.textcolor}"})};
+    color: ${Theme.colors.textcolor};
+
+   
+/* font-family: 'Nunito', sans-serif;
+font-size: 24px; */
+line-height: 36px; /* 150% */
+width: 400px;
+margin: 32px 0;
+flex-wrap: wrap;
+@media ${Theme.media.mobile}{
+    flex-wrap: wrap;
+    width:350px;
+    text-align: center;
+    margin-left: 15%;
+    
 }
 
 
 `
 //for margin constraction
 const Greetings = styled.div`
-margin-top:55px ;
+margin-top: 50px ;
+flex-wrap: wrap;
+
+@media ${Theme.media.mobile}{
+    text-align: center;
+}
+@media screen and (max-width: 1068px){
+    text-align: center;
+}
 `
 //For robbots search
 const StyledTitle = styled.h1`
+
+${font({fmax: 20, fmin: 15, family: "Nunito, sans-serif"  })}
 color: ${Theme.colors.buttonBg};
-font-family: 'Nunito', 'sans-serif';
-font-size: 20px;
-font-weight: 700;
 text-transform: uppercase;
-white-space: nowrap;
+
     
 `
 //Name
 const Name = styled.h2`
 color:${Theme.colors.fontSection};
-font-family: 'Roboto', sans-serif;
-font-size: 64px;
-font-weight: 700;
-line-height: 77px;
-white-space: nowrap;
+
+${font({fmax: 64, fmin: 30, width:508, family: "'Roboto', sans-serif"})}
+
+
+
+width: 508px;
+
 `
 //Avatar Photo
 const Photo = styled.img`
 object-fit: cover;
 width: 520px;
 height: 429px;
-z-index: 1;
-transform: translateX(-350px) translateY(-50px);
+
+@media ${Theme.media.mobile} {
+  width:310px;
+  height: 380px;
+
+}
 
 `
 
 // backgroung yellow color
-export const PhotoBack = styled.img`
-width:529px;
-height:480px;
-z-index:0;
-transform: translateX(80px) translateY(-100px);
-opacity: 0.9;
-    
+export const PhotoWrapper= styled.div`
+background-image: url(${avatarSvg});
+background-size: contain;
+background-repeat: no-repeat;
+@media screen and (max-width: 1068px) {
+    background-image:none; 
+    background-color: ${Theme.colors.buttonBg};
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow:  -11px 13px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 20px;
+    align-items: center;
+}
+ 
 `

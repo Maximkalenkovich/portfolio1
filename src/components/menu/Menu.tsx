@@ -18,13 +18,18 @@ export const Menu = () =>{
 };
 
 const StyledMenu = styled.nav `
-
+flex-direction: row;
 display: flex;
+
+
 li{
     display: inline-block;
     margin-left: 48px;
     height: 50%;
-    
+
+    @media ${Theme.media.mobile}{
+  margin-left: 10px;
+}
     
 }
 
@@ -37,6 +42,9 @@ font-size: 18px;
 font-weight: 500;
 line-height: 28px; /* 155.556% */
 }
+
+
+
 
 
 `
