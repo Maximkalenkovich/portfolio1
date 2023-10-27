@@ -40,8 +40,18 @@ const StyledContacts = styled.section`
         resize: none;
         width: 400px;
 height: 160px;
+
+@media ${Theme.media.mobile}{
+
+width: 300px;
+height: 160px;
+resize: none;
+
+            
+}
     }
 
+ 
     
 `
 
@@ -64,6 +74,16 @@ border: 1px solid #E8ECF4;
 background: ${Theme.colors.progectsBg};
 width: 400px;
 height: 40px;
+
+@media ${Theme.media.mobile}{
+
+    width: 300px;
+height: 40px;
+
+                
+}
+
+
 `
 const Label = styled.label`
 display: flex;

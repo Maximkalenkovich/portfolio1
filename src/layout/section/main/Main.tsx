@@ -45,6 +45,12 @@ display: flex;
 
 ${StyledButton}{
     margin-top: 32px;
+
+    @media ${Theme.media.mobile}{
+        align-items: center;
+        margin-left: 4%;
+        margin-top: 15px;
+    }
 }
 
 
@@ -62,6 +68,11 @@ line-height: 36px; /* 150% */
 width: 400px;
 margin: 32px 0;
 flex-wrap: wrap;
+@media screen and (max-width: 1052px){
+    margin-left: 10%;
+}
+
+
 @media ${Theme.media.mobile}{
     flex-wrap: wrap;
     width:350px;
@@ -79,8 +90,9 @@ flex-wrap: wrap;
 
 @media ${Theme.media.mobile}{
     text-align: center;
+    margin-top: 80px;
 }
-@media screen and (max-width: 1068px){
+@media screen and (max-width: 1052px){
     text-align: center;
 }
 `
@@ -108,11 +120,12 @@ width: 508px;
 const Photo = styled.img`
 object-fit: cover;
 width: 520px;
-height: 429px;
+height: 420px;
 
 @media ${Theme.media.mobile} {
-  width:310px;
-  height: 380px;
+  width:300px;
+  height: 350px;
+  object-fit: cover;
 
 }
 
@@ -123,7 +136,7 @@ export const PhotoWrapper= styled.div`
 background-image: url(${avatarSvg});
 background-size: contain;
 background-repeat: no-repeat;
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1052px) {
     background-image:none; 
     background-color: ${Theme.colors.buttonBg};
     background-size: contain;

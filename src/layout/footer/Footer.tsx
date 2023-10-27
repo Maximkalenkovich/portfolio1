@@ -36,10 +36,11 @@ export const Footer = () =>{
 }
 
 const StyledFooter = styled.footer`
+
+min-height: 40vh;
 background-color: ${Theme.colors.primaryBg};
     background-image: url(${FooterImg});
     background-repeat: no-repeat;
-    padding: 120px 0;
     
 
 `

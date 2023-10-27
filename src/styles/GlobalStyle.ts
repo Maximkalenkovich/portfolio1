@@ -28,6 +28,16 @@ body {
 
 section {
   padding: 100px 0;
+  min-height: 100%;
+overflow: hidden;
+
+  @media ${Theme.media.mobile}{
+
+    padding: 10px;
+
+    min-height: 100%;
+overflow: hidden;
+  }
 
 
 }

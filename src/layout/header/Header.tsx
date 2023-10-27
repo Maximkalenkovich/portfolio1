@@ -29,10 +29,11 @@ const StyledHeader = styled.header `
    // background: transparent;
  padding: 20px 0;
   list-style: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999999;
+
 
 `
