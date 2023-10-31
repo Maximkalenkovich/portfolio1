@@ -24,8 +24,10 @@ flex-direction: column;
 align-items:center ;
 
 ${StyledButton}{
+    /* display: flex;
+  justify-content: flex-end; */
  margin-top: 24px;
-  margin-left: 27%;
+
 }
 
     
