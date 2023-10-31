@@ -17,7 +17,8 @@ const Proj = styled.div`
 max-width: 992px;
 width :100% ;
 margin-top:30px;
-height: 524px;
+max-height: 524px;
+height: 100%;
 display: flex;
 justify-content: space-between;
 box-shadow: 0px 0px 36px 9px rgba(34, 60, 80, 0.2);
@@ -33,6 +34,7 @@ flex-wrap: wrap;
 @media screen and (max-width: 987px){
 width: 400px;
 height: 600px;
+
 
 }
 
@@ -118,6 +120,7 @@ object-fit: cover;
 width: 400px;
 height: 300px;
 object-fit: cover;
+
 
 }
 

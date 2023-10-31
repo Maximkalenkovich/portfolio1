@@ -28,8 +28,8 @@ line-height: 36px; /* 150% */
 width: 400px;
 margin: 32px 0;
 flex-wrap: wrap;
-@media screen and (max-width: 1052px){
-    margin-left: 10%;
+@media screen and (max-width: 1069px){
+    margin-left: 8%;
 }
 
 
@@ -52,7 +52,7 @@ flex-wrap: wrap;
     text-align: center;
     margin-top: 80px;
 }
-@media screen and (max-width: 1052px){
+@media screen and (max-width: 1069px){
     text-align: center;
 }
 `
@@ -95,7 +95,7 @@ const PhotoWrapper= styled.div`
 background-image: url(${avatarSvg});
 background-size: contain;
 background-repeat: no-repeat;
-@media screen and (max-width: 1052px) {
+@media screen and (max-width: 1068px) {
     background-image:none; 
     background-color: ${Theme.colors.buttonBg};
     background-size: contain;
