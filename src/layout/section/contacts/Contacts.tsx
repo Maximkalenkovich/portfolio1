@@ -1,101 +1,34 @@
-import styled from "styled-components";
 import { SectionTitles } from "../../../components/sectiontitles/SectionTitles"
 import { Container } from "../../../components/Container";
-import { Theme } from "../../../styles/Theme";
 import { StyledButton } from "../../../components/button/styledButton/StyledButton";
+import { S } from "./styled_contact/Contact_Styled";
 
 
 
 export const Contacts = () =>{
 return(
-    <StyledContacts>
+    <S.Contacts>
     <SectionTitles>Contact me</SectionTitles>
     <Container>
-    <StyledForm>
-        <Label htmlFor="name">
-          <Title>Name</Title>
-        <Field/>
-        </Label>
+    <S.Form>
+        <S.Label htmlFor="name">
+          <S.Title>Name</S.Title>
+        <S.Field/>
+        </S.Label>
 
-        <Label htmlFor="email">
-           <Title> Email</Title>
-        <Field/>
-        </Label>
+        <S.Label htmlFor="email">
+           <S.Title> Email</S.Title>
+        <S.Field/>
+        </S.Label>
 
-        <Label htmlFor="message">
-            <Title>Message</Title>
-        <Field as={"textarea"}/>
-        </Label>
+        <S.Label htmlFor="message">
+            <S.Title>Message</S.Title>
+        <S.Field as={"textarea"}/>
+        </S.Label>
         <StyledButton type={"submit"}>Send</StyledButton>
-    </StyledForm>
+    </S.Form>
     </Container>
-    </StyledContacts>
+    </S.Contacts>
 );
 };
 
-const StyledContacts = styled.section`
-
-
-    textarea {
-        resize: none;
-        width: 400px;
-height: 160px;
-
-@media ${Theme.media.mobile}{
-
-width: 300px;
-height: 160px;
-resize: none;
-
-            
-}
-    }
-
- 
-    
-`
-
-const StyledForm = styled.form`
-display: flex;
-flex-direction: column;
-align-items:center ;
-
-${StyledButton}{
-
-    margin-top: 24px;
-  margin-left: 27%;
-}
-
-    
-`
-const Field = styled.input`
-    border-radius: 8px;
-border: 1px solid #E8ECF4;
-background: ${Theme.colors.progectsBg};
-width: 400px;
-height: 40px;
-
-@media ${Theme.media.mobile}{
-
-    width: 300px;
-height: 40px;
-
-                
-}
-
-
-`
-const Label = styled.label`
-display: flex;
-flex-direction: column;
-
-    
-`
-
-
-const Title = styled.span`
-    color: ${Theme.colors.fontSection};
-font-family: 'Nunito',sans-serif;
-font-size: 16px;
-font-weight: 600;
-`
