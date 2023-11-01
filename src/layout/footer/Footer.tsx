@@ -27,7 +27,7 @@ export const Footer = () => {
                         </S.SocialLink>
                     </S.SocialItems>
                 </S.SocialList>
-                <S.Copyright>© 2023 Maksim Kalenkovich, All Rights Reserved.</S.Copyright>
+                <S.Copyright>© 2023 Maksim Kalenkovich</S.Copyright>
             </FlexWrapper>
         </S.Footer>
     );

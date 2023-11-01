@@ -9,7 +9,7 @@ export const Main: React.FC = () => {
     return (
         <S.Main>
             <Container>
-                <FlexWrapper justify="space-around" wrap="wrap">
+                <FlexWrapper justify="space-around" wrap="wrap-reverse">
                     <S.Greetings>
                         <S.Title>Software Developer</S.Title>
                         <S.Name>Hello, my name is

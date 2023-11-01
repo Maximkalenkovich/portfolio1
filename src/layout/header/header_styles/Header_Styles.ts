@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
 
+
 const Header = styled.header `
+
    background: transparent;
  padding: 20px 0;
   list-style: none;
@@ -12,6 +14,5 @@ const Header = styled.header `
   z-index: 999999;
 `
 export const S = {
- Header
-    
+Header
 }

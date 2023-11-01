@@ -16,6 +16,8 @@ background-image: url(${FooterImg});
     @media ${Theme.media.tablet}{
         height: 100%;
 background-image: none;
+background: -webkit-linear-gradient(90deg, #cadb48,#eeff00,#d0d317);/* Chrome 10-25, Safari 5.1-6 */                          
+background: linear-gradient(90deg, #cadb48,#eeff00,#d0d317);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 
     }
 
